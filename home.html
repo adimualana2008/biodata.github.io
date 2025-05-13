@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* navbar normal or responsif */
+      nav {
+        background-color: #1e90ff;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+      }
+      nav ul {
+        display: flex;
+        gap: 10px;
+      }
+      nav ul li {
+        list-style: none;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        transition: all 0.4s ease;
+        border-radius: 6px;
+      }
+      nav ul li a:hover {
+        background-color: #f0f8ff;
+        color: #1e90ff;
+        transition: all 0.4s ease;
+      }
+
+      /* home */
+      .content {
+        background: linear-gradient(to bottom, #9bc7f4 50%, white);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        gap: 50px;
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+      .profile p {
+        font-size: 16px;
+      }
+      .nama {
+        font-size: 35px;
+      }
+
+      /* halaman about us */
+      .about {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .about div {
+        width: 800px;
+        display: flex;
+        gap: 30px;
+      }
+      .about div p {
+        text-align: center;
+        font-size: 16px;
+      }
+
+      /* halaman Project */
+      .project {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top, #9bc7f4 50%, white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .project .pertama {
+        width: 300px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .project .pertama:hover{
+        padding: 20px;
+        transition: 0.5s;
+        background-color: rgb(82, 82, 230);
+        color: white;
+      }
+      .project .pertama img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+      }
+      .project .pertama div {
+        text-align: right;
+      }
+      .project .pertama div a{
+        text-decoration: none;
+        padding: 6px;
+        color: black;
+      }
+      
+
+      /* untuk samua responsif */
+      @media (max-width: 750px) {
+        nav {
+          font-size: 10px;
+        }
+        .content {
+          flex-direction: column;
+        }
+        .about div {
+          width: 70%;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content" id="home">
+      <div class="profile">
+        <img src="fotosaya.jpg" alt="" />
+        <div>
+          <div class="nama">Adi Maulana</div>
+          <p>Pelajar | Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <h2>About me</h2>
+      <div>
+        <p>
+          Saya adalah pelajar SMK jurusan RPL yang memiliki keterampilan dalam
+          pemrograman web menggunakan Laravel dan pengembangan aplikasi desktop
+          dengan C#.
+        </p>
+        <p>
+          Dengan semangat belajar tinggi dan pengalaman membuat proyek sederhana
+          seperti sistem pembayaran SPP, saya siap mengembangkan diri lebih jauh
+          di dunia profesional.
+        </p>
+      </div>
+    </div>
+
+    <div class="project" id="project">
+      <h2>My Project</h2>
+      <div class="pertama">
+        <img src="fotospp.png" alt="" />
+        <p>
+          Aplikasi pembayaran spp berbasis desktop yang digunakan untuk membayar
+          spp sekolah
+        </p>
+        <div>
+          <a href="https://github.com/adimaulana010208/pembayaran-_spp"
+            >Lihat Project</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
