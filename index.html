@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biodata Adi Maulana</title>
+    <title> Adi Maulana</title>
     <style>
       * {
         margin: 0;
@@ -99,27 +99,30 @@
         flex-direction: column;
         gap: 20px;
       }
-      .project .pertama {
+      .project .isiproject{
+        display: flex;
+        gap: 20px;
+      }
+      .project .isiproject .pertama {
         width: 300px;
         background-color: white;
         padding: 10px;
         border-radius: 10px;
       }
-      .project .pertama:hover {
+      .project .isiproject .pertama:hover {
         padding: 20px;
         transition: 0.5s;
         background-color: rgb(82, 82, 230);
         color: white;
       }
-      .project .pertama img {
-        width: 100%;
+      .project .isiproject .pertama img {
         height: 200px;
         border-radius: 10px;
       }
-      .project .pertama div {
+      .project .isiproject .pertama div {
         text-align: right;
       }
-      .project .pertama div a {
+      .project .isiproject .pertama div a {
         text-decoration: none;
         padding: 6px;
         color: black;
@@ -197,6 +200,11 @@
           width: 70%;
           flex-direction: column;
         }
+        .project .isiproject{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
       }
     </style>
   </head>
@@ -223,9 +231,9 @@
           <div class="card-back">
             <h2>About Me</h2>
             <p>
-              Saya adalah pelajar SMK jurusan RPL yang memiliki keterampilan dalam
-              pemrograman web menggunakan Laravel dan pengembangan aplikasi desktop
-              dengan C#.
+              Saya adalah pelajar SMK jurusan RPL yang memiliki keterampilan
+              dalam pemrograman web menggunakan Laravel dan pengembangan
+              aplikasi desktop dengan C#.
             </p>
           </div>
         </div>
@@ -246,7 +254,8 @@
 
     <div class="project" id="project">
       <h2>My Project</h2>
-      <div class="pertama">
+      <div class="isiproject">
+        <div class="pertama">
         <img src="fotospp.png" alt="" />
         <p>
           Aplikasi pembayaran spp berbasis desktop yang digunakan untuk membayar
@@ -257,6 +266,19 @@
             >Lihat Project</a
           >
         </div>
+      </div>
+
+      <div class="pertama">
+        <img src="fotokasir_resto.png" alt="" />
+        <p>
+          Aplikasi kasir Berbasis desktop yang digunakan untuk mencatat pesanan pelanggan.
+        </p>
+        <div>
+          <a href="https://github.com/adimualana2008/kasirRestoran"
+            >Lihat Project</a
+          >
+        </div>
+      </div>
       </div>
     </div>
   </body>
