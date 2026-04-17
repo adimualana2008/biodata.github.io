@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Adi Maulana Smkn 1 sumberasih</title>
+    <title>Portofolio Adi Maulana </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -13,8 +13,8 @@
             theme: {
                 extend: {
                     colors: {
-                        dark: '#0f172a', // Deep Slate
-                        accent: '#22d3ee', // Cyan
+                        dark: '#0f172a',
+                        accent: '#22d3ee',
                     }
                 }
             }
@@ -32,15 +32,27 @@
             background: linear-gradient(45deg, #22d3ee, #0f172a);
             border-radius: 50%;
         }
+        .btn-project {
+            display: inline-block;
+            background: rgba(34, 211, 238, 0.1);
+            border: 1px solid rgba(34, 211, 238, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-project:hover {
+            background: rgba(34, 211, 238, 0.2);
+            border-color: #22d3ee;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body class="bg-dark text-slate-200 font-sans">
 
     <nav class="fixed w-full z-50 bg-dark/80 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-accent font-bold text-xl tracking-tighter">DEV_PORTFOLIO</span>
+            <span class="text-accent font-bold text-xl tracking-tighter">ADI_PORTFOLIO</span>
             <div class="space-x-8 hidden md:block">
                 <a href="#home" class="hover:text-accent transition">Home</a>
+                <a href="#experience" class="hover:text-accent transition">Pengalaman</a>
                 <a href="#projects" class="hover:text-accent transition">Projects</a>
             </div>
         </div>
@@ -51,7 +63,7 @@
             <img src="https://raw.githubusercontent.com/adimualana2008/biodata.github.io/main/fotosaya.jpg" alt="Profile" class="w-32 h-32 rounded-full object-cover border-4 border-dark">
         </div>
         <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-2" data-aos="fade-up">Adi Maulana</h1>
-        <p class="text-accent text-lg md:text-xl font-medium mb-4" data-aos="fade-up" data-aos-delay="100">Pelajar smk</p>
+        <p class="text-accent text-lg md:text-xl font-medium mb-4" data-aos="fade-up" data-aos-delay="100">Pelajar SMK | Web Developer</p>
         <p class="text-slate-400 text-center max-w-lg mb-8" data-aos="fade-up" data-aos-delay="200">
             Siswa Kelas 12 RPL di <span class="text-white">SMKN 1 Sumberasih, Probolinggo</span>. Berfokus pada arsitektur database yang efisien dan pengembangan aplikasi skala desktop maupun web.
         </p>
@@ -62,67 +74,138 @@
         </div>
     </section>
 
+    <!-- SECTION PENGALAMAN MAGANG -->
+    <section id="experience" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3" data-aos="fade-right">
+            <span class="text-accent">#</span> Pengalaman 
+        </h2>
+        
+        <div class="glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300" data-aos="fade-up">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+                <div class="flex items-center gap-4">
+                    <div class="bg-accent/20 p-3 rounded-full">
+                        <i class="fas fa-briefcase text-accent text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Magang Bidang Laravel</h3>
+                        <p class="text-accent font-semibold">PT Kutai Timber Indonesia - Divisi IT</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800/50 px-4 py-2 rounded-full text-sm border border-slate-700">
+                    <i class="far fa-calendar-alt mr-2 text-accent"></i> Periode: 5 Januari 2026 - 30 April 2026
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="flex items-start gap-3">
+                    <i class="fas fa-code text-accent mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-white">Pengembangan Aplikasi Internal</h4>
+                        <p class="text-sm text-slate-400">Membangun sistem pengolahan data barang berbasis web dengan Laravel & MySQL.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <i class="fas fa-database text-accent mt-1"></i>
+                    <div>
+                        <h4 class="font-semibold text-white">Optimasi Database</h4>
+                        <p class="text-sm text-slate-400">Menganalisis dan meningkatkan performa query SQL untuk laporan perusahaan.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700/50 pt-4 mt-2">
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    <i class="fas fa-quote-left text-accent mr-2 opacity-70"></i> 
+                    Selama menjalani magang, saya memperoleh pengalaman belajar mandiri, mengerjakan tugas pembuatan aplikasi web berbasis Laravel, mulai dari proses hosting hingga deployment ke GitHub, serta terhubung menggunakan SSH.    
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs">Laravel</span>
+                    <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs">MySQL</span>
+                    <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-3" data-aos="fade-right">
             <span class="text-accent">#</span> Featured Projects
         </h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-6 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up">
+            <!-- Project 1 - Aplikasi Pembayaran SPP -->
+            <div class="glass-card p-6 rounded-2xl hover:-translate-y-2 transition duration-300 flex flex-col" data-aos="fade-up">
                 <div class="text-accent text-3xl mb-4"><i class="fas fa-desktop"></i></div>
                 <h3 class="text-xl font-bold mb-2">Aplikasi Pembayaran SPP</h3>
                 <p class="text-slate-400 text-sm mb-4">Sistem manajemen pembayaran sekolah berbasis C# Desktop dengan integrasi database MySQL yang terstruktur.</p>
-                <div class="flex gap-2 text-xs">
+                <div class="flex gap-2 text-xs mb-4">
                     <span class="text-accent">C#</span>
                     <span class="text-accent">MySQL</span>
                 </div>
+                <a href="https://github.com/adimaulana2008/pembayaran-_spp" target="_blank" class="btn-project text-accent text-sm py-2 px-4 rounded-lg text-center mt-auto w-fit">
+                    <i class="fab fa-github mr-1"></i> Lihat Repository
+                </a>
             </div>
 
-            <div class="glass-card p-6 rounded-2xl hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+            <!-- Project 2 - Kasir Restoran -->
+            <div class="glass-card p-6 rounded-2xl hover:-translate-y-2 transition duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                 <div class="text-accent text-3xl mb-4"><i class="fas fa-cash-register"></i></div>
                 <h3 class="text-xl font-bold mb-2">Kasir Restoran (Point of Sale)</h3>
                 <p class="text-slate-400 text-sm mb-4">Aplikasi desktop untuk manajemen pesanan, stok, dan laporan keuangan restoran secara real-time.</p>
-                <div class="flex gap-2 text-xs">
+                <div class="flex gap-2 text-xs mb-4">
                     <span class="text-accent">C#</span>
                     <span class="text-accent">Desktop</span>
                 </div>
+                <a href="https://github.com/adimaulana2008/kasirRestoran" target="_blank" class="btn-project text-accent text-sm py-2 px-4 rounded-lg text-center mt-auto w-fit">
+                    <i class="fab fa-github mr-1"></i> Lihat Repository
+                </a>
             </div>
 
-            <div class="glass-card p-6 rounded-2xl border-accent/30 border md:col-span-1 hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+            <!-- Project 3 - Daftar Paket (Web) dengan catatan login -->
+            <div class="glass-card p-6 rounded-2xl border-accent/30 border hover:-translate-y-2 transition duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="200">
                 <div class="text-accent text-3xl mb-4"><i class="fas fa-boxes-stacked"></i></div>
-                <h3 class="text-xl font-bold mb-2 text-white">Daftar Paket (Web)</h3>
-                <p class="text-slate-400 text-sm mb-4">Aplikasi yang digunakan oleh satpam untuk mencatat paket datang</p>
-                <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                <h3 class="text-xl font-bold mb-2 text-white">Daftar Barang (Web)</h3>
+                <p class="text-slate-400 text-sm mb-4">Aplikasi yang digunakan oleh satpam untuk mencatat paket datang.</p>
+                <ul class="text-xs text-slate-300 space-y-2 mb-4">
                     <li><i class="fas fa-check text-accent mr-2"></i> CRUD & Role Management (Spatie)</li>
                     <li><i class="fas fa-check text-accent mr-2"></i> Integrasi API Cek Resi Logistik</li>
                     <li><i class="fas fa-check text-accent mr-2"></i> Deploy Git & InfinityFree</li>
                 </ul>
-                <div class="flex gap-2 text-xs">
+                <div class="flex gap-2 text-xs mb-4">
                     <span class="bg-accent/10 text-accent px-2 py-1 rounded">Laravel 12</span>
                     <span class="bg-accent/10 text-accent px-2 py-1 rounded">Postman</span>
                 </div>
+                
+                <!-- Catatan Username & Password untuk demo -->
+                <div class="bg-slate-800/70 border border-accent/30 rounded-lg p-3 mb-4 text-xs">
+                    <p class="text-accent font-semibold mb-1"><i class="fas fa-key mr-1"></i> Demo Login</p>
+                    <p class="text-slate-300"><span class="text-white">Username:</span> tamu@gmail.com</p>
+                    <p class="text-slate-300"><span class="text-white">Password:</span> tamu</p>
+                    <p class="text-slate-400 mt-1 text-[11px]">*Gunakan kredensial di atas untuk mengakses demo.</p>
+                </div>
+
+                <a href="https://ptkti.alwaysdata.net" target="_blank" class="btn-project text-accent text-sm py-2 px-4 rounded-lg text-center mt-auto w-fit">
+                    <i class="fas fa-external-link-alt mr-1"></i> Kunjungi Demo
+                </a>
             </div>
         </div>
     </section>
 
-    
     <footer class="py-12 text-center text-slate-500 border-t border-slate-800">
         <div class="flex justify-center gap-6 mb-6 text-xl">
             <a href="https://github.com/adimualana2008" class="hover:text-accent"><i class="fab fa-github"></i></a>
         </div>
-        <p>&copy; 2026 Adi Maulana. Build with.</p>
+        <p>&copy; 2026 Adi Maulana. Build with passion.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Inisialisasi AOS
         AOS.init({
             duration: 1000,
             once: true,
             offset: 100
         });
 
-        // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
